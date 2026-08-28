@@ -3,3 +3,42 @@
 ################################################################################
 
 /.vs
+
+################################################################################
+# Python
+################################################################################
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+build/
+dist/
+
+################################################################################
+# Personal agent tooling config — not project content.
+################################################################################
+.agent/
+.claude/settings.local.json
+
+################################################################################
+# python/audio/normalize-videoclip
+################################################################################
+# Personal media libraries — never commit actual video content or
+# machine-specific input/output folders.
+python/audio/normalize-videoclip/Library/
+python/audio/normalize-videoclip/Library_Normalized/
+python/audio/normalize-videoclip/*.mp4
+python/audio/normalize-videoclip/*.mkv
+python/audio/normalize-videoclip/*.avi
+python/audio/normalize-videoclip/*.mov
+python/audio/normalize-videoclip/*.mpg
+python/audio/normalize-videoclip/*.mpeg
+python/audio/normalize-videoclip/*.webm
+!python/audio/normalize-videoclip/examples/**
+
+# Not for the public repo: YouTube prep notes and internal docs.
+python/audio/normalize-videoclip/docs/
+python/audio/normalize-videoclip/youtube_script.md
+python/audio/normalize-videoclip/youtube_thumbnails_titles.md

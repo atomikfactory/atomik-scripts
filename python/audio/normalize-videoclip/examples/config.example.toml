@@ -1,0 +1,20 @@
+# Copy to config.toml and pass with `normalize-videoclip INPUT OUTPUT --config config.toml`.
+# Only include the keys you want to override — anything omitted keeps the
+# library default. CLI flags always win over values in this file.
+
+video_crf = 18
+video_preset = "medium"
+
+audio_bitrate = "192k"
+audio_channels = 2
+
+loudnorm_i = -16.0
+loudnorm_lra = 11.0
+loudnorm_tp = -1.5
+
+# Comma-separated string in TOML, same as the --extensions flag.
+extensions = ".mkv,.mp4,.avi,.mov,.mpg,.mpeg,.webm"
+legacy_extensions = ".mpg,.mpeg,.webm"
+
+workers = 4
+overwrite = false
