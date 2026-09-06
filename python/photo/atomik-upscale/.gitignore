@@ -1,0 +1,18 @@
+.venv/
+models/*.pth
+models/*.part
+.cache/
+output/
+archive/
+input/*
+!input/.gitkeep
+__pycache__/
+*.pyc
+
+# Machine-specific local config — not portable across machines/clones.
+.claude/settings.local.json
+.mcp.json
+
+# Unpublished YouTube prep notes — same convention as
+# python/audio/normalize-videoclip (see root .gitignore).
+youtube-script.md
