@@ -1,8 +1,5 @@
 # atomik-upscale
 
-GPU image upscaling tuned for **this** machine: RTX 3060 Ti (8 GB, Ampere sm_86),
-Ryzen 9 3950X, 64 GB RAM, Windows 11.
-
 Drop images in `input/`, run one command, get at least 4K out.
 
 **Full CLI reference: [SOP.md](SOP.md)** — every flag, target form, exit code

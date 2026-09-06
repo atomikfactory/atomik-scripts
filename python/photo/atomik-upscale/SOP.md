@@ -3,7 +3,7 @@
 Complete operating reference for the `atomik` command line tool.
 
 Install location: `D:\- Dev -\atomik-factory\atomik-upscale`
-Target machine: RTX 3060 Ti (8 GB, Ampere sm_86), Ryzen 9 3950X, 64 GB RAM, Windows 11
+
 
 ---
 
@@ -36,20 +36,20 @@ Three equivalent ways. Pick one and stay with it.
 **A — the wrapper (simplest).** From the project folder:
 
 ```powershell
-cd "D:\- Dev -\atomik-factory\atomik-upscale"
+cd ".\atomik-factory\atomik-upscale"
 .\atomik-upscale.cmd run
 ```
 
 Works from any working directory as long as you give the full path:
 
 ```powershell
-& "D:\- Dev -\atomik-factory\atomik-upscale\atomik-upscale.cmd" run
+& ".\atomik-factory\atomik-upscale\atomik-upscale.cmd" run
 ```
 
 **B — the executable directly.** No venv activation needed:
 
 ```powershell
-& "D:\- Dev -\atomik-factory\atomik-upscale\.venv\Scripts\atomik.exe" run
+& ".\atomik-factory\atomik-upscale\.venv\Scripts\atomik.exe" run
 ```
 
 **C — put it on PATH once**, then just type `atomik` anywhere:
