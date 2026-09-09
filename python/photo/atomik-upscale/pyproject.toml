@@ -4,8 +4,8 @@ version = "1.0.0"
 description = "GPU image upscaler tuned for RTX 3060 Ti (8 GB Ampere) — CLI + MCP server"
 requires-python = ">=3.11,<3.13"
 dependencies = [
-    "torch==2.9.1",
-    "torchvision==0.24.1",
+    "torch==2.13.0",
+    "torchvision==0.28.0",
     "spandrel==0.4.2",
     "spandrel-extra-arches==0.2.0",
     "numpy>=1.26",
@@ -27,13 +27,15 @@ build-backend = "hatchling.build"
 packages = ["src/atomik_upscale"]
 
 # --- Hardware-pinned wheel source -------------------------------------------
-# RTX 3060 Ti = Ampere, compute capability 8.6, driver 595.79.
-# cu128 wheels carry sm_86 kernels and have the most complete Windows/cp311 set.
+# RTX 3060 Ti = Ampere, compute capability 8.6, driver 595.79 (supports up to CUDA 13.2).
+# cu130 wheels carry sm_86 kernels and have the most complete Windows/cp311 set.
+# torch 2.9.1/cu128 -> 2.13.0/cu130: fixes GHSA-qfhq-4f3w-5fph, GHSA-rrmf-rvhw-rf47,
+# PYSEC-2026-139, PYSEC-2026-2286 (memory corruption in lstm_cell / jit.script).
 [tool.uv.sources]
-torch = { index = "pytorch-cu128" }
-torchvision = { index = "pytorch-cu128" }
+torch = { index = "pytorch-cu130" }
+torchvision = { index = "pytorch-cu130" }
 
 [[tool.uv.index]]
-name = "pytorch-cu128"
-url = "https://download.pytorch.org/whl/cu128"
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
 explicit = true
