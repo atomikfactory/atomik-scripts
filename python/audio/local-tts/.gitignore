@@ -1,0 +1,61 @@
+# --- secrets / local configuration ---------------------------------------
+.env
+.env.*
+!.env.example
+
+# --- Python -----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+.venv-*/
+venv/
+env/
+
+# --- model weights (downloaded on first run, several GB) -------------------
+models/*
+!models/.gitkeep
+*.safetensors
+*.ckpt
+*.pth
+*.pt
+*.bin
+*.onnx
+*.gguf
+
+# --- voice samples & profiles (personal data - never commit) ---------------
+voices/*
+!voices/.gitkeep
+!voices/README.md
+
+# --- generated audio / caches ----------------------------------------------
+output/*
+!output/.gitkeep
+.cache/
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.opus
+*.m4a
+*.aac
+*.aiff
+
+# --- your own scripts (keep only the shipped example) ----------------------
+input/*
+!input/.gitkeep
+!input/example_script.txt
+
+# --- OS / editor noise -------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+*.tmp
+.idea/
+.vscode/

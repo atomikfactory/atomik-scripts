@@ -1,0 +1,4 @@
+# Development / test tooling. The unit tests do NOT need torch or any model.
+-r requirements.txt
+pytest>=8.0
+ruff>=0.6

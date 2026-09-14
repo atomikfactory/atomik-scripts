@@ -1,0 +1,14 @@
+Welcome to the Workshop
+
+Every good voice-over starts with a script that reads well out loud. This example exists so you can test the tool before recording anything yourself. Drop your own text file into the input folder, run one command, and a finished narration appears in the output folder.
+
+The tool splits long scripts automatically. Paragraphs become natural pauses, sentences stay intact, and quotes like "keep it simple" are read as one thought. Abbreviations such as Dr. Smith, Mr. Jones and St. Louis will not break a sentence in half, and neither will numbers like 3.5 percent or 12.75 dollars.
+
+A few things worth knowing:
+- Short chunks are generated one after another, then joined into a single file.
+- Finished chunks are cached, so an interrupted run resumes where it stopped.
+- The final file is peak-normalised, mono, and saved as WAV by default.
+
+For voice cloning, record ten to twenty seconds of clean speech in a quiet room. Speak the way you want the narration to sound: same pace, same energy, same distance from the microphone. Then save it as a voice profile and reuse it for every script.
+
+That is all there is to it. Thanks for listening, and enjoy the workshop.

@@ -1,0 +1,11 @@
+# Optional engine: Kokoro-82M (fixed voices, CPU friendly) - Apache-2.0.
+# Can live in the same environment as Chatterbox. Install PyTorch first (see requirements-chatterbox.txt).
+# Python 3.10 - 3.12 (kokoro 0.9.x does not support 3.13 yet).
+-r requirements.txt
+kokoro==0.9.4
+# Extra language packs (optional):
+#   pip install "misaki[ja]"   # Japanese voices
+#   pip install "misaki[zh]"   # Mandarin voices
+# English out-of-dictionary words use espeak-ng; the espeakng-loader package bundles it on
+# Windows/macOS/Linux x86_64. If you see "EspeakFallback not Enabled", install espeak-ng manually:
+#   https://github.com/espeak-ng/espeak-ng/releases

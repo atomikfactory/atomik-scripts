@@ -1,0 +1,46 @@
+# --- generated voice-overs, manifests and logs (personal data - never commit) -
+# Manifests and logs contain your script text, local file paths and Resolve
+# project/media IDs; segments are generated audio.
+output/
+*.log
+
+# --- your own scripts (keep only the shipped example) ----------------------
+*.txt
+!example_script.txt
+!requirements*.txt
+
+# --- secrets / local configuration ---------------------------------------
+.env
+.env.*
+!.env.example
+
+# --- generated audio ---------------------------------------------------------
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.m4a
+*.aac
+*.aiff
+
+# --- Python -----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+.venv-*/
+venv/
+env/
+
+# --- OS / editor noise -------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+.idea/
+.vscode/

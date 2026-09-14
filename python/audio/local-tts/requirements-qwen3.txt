@@ -1,0 +1,14 @@
+# Optional engine: Qwen3-TTS (0.6B / 1.7B Base, CustomVoice) - Apache-2.0.
+#
+# !! Use a SEPARATE virtual environment for this engine !!
+# qwen-tts pins transformers==4.57.x while chatterbox-tts pins transformers==5.x;
+# they cannot be installed side by side.  Example:
+#   python -m venv .venv-qwen
+#   (activate it)
+#   pip install torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu124
+#   pip install -r requirements-qwen3.txt
+#   python tts.py --input input/script.txt --model qwen3-tts --voice-profile my_voice
+#
+# Python 3.10 - 3.12.  flash-attn is optional (reduces VRAM) and hard to build on Windows; skip it.
+-r requirements.txt
+qwen-tts==0.1.1

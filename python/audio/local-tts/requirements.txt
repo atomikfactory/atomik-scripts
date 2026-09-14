@@ -1,0 +1,6 @@
+# Core dependencies (text processing, audio I/O, CLI). No model included.
+# Install ONE engine on top of this - see requirements-chatterbox.txt (default),
+# requirements-kokoro.txt or requirements-qwen3.txt, and README.md -> Installation.
+numpy>=1.24,<2.0
+soundfile>=0.12.1
+soxr>=0.5

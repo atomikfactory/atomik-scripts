@@ -33,7 +33,7 @@ It is recommended to run the script inside a Python virtual environment. Follow 
 ```bash
 # 1. Clone the repository and enter the directory
 git clone https://github.com/atomikfactory/atomik-scripts.git
-cd atomik-scripts
+cd atomik-scripts/python/video/transcribe-folder
 
 # 2. Create and activate a virtual environment
 python -m venv .venv
@@ -51,7 +51,7 @@ pip install -U openai-whisper psutil
 ```bash
 # 1. Clone the repository and enter the directory
 git clone https://github.com/atomikfactory/atomik-scripts.git
-cd atomik-scripts
+cd atomik-scripts/python/video/transcribe-folder
 
 # 2. Create and activate a virtual environment
 python -m venv .venv

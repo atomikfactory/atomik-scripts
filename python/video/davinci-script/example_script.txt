@@ -1,0 +1,19 @@
+The Quiet Revolution in Post-Production
+
+In 1998, a colourist named Dr. Elena Marsh sat in a windowless suite in Soho and graded a feature film one shot at a time. The console in front of her cost more than the house she lived in — roughly £180,000, or about $290,000 at the time — and it could not do a single thing that your laptop cannot do today, faster and for free.
+
+"We used to say that the grade was where a film found its soul," she told me. "What nobody told us was that the soul would eventually cost nothing." She laughed, then added: "That is either the best news in the history of cinema, or the worst."
+
+The numbers make her point better than any argument could. A 2024 industry survey found that 61.4% of independent features finished in the previous eighteen months were graded on software costing under $500. Nine years earlier, that figure was 3.7%. The tools did not merely get cheaper; they collapsed in price by roughly two orders of magnitude while getting demonstrably better.
+
+Three things changed, and they changed in this order:
+
+- Hardware caught up. A consumer GPU in 2016 could finally hold a 4K debayer in real time, at a price a freelancer could justify.
+- The software followed, and it followed aggressively. Free tiers stopped being crippled demos and started being genuinely complete.
+- Then the workflow itself dissolved. Editing, grading, audio and delivery stopped being four rooms with four specialists and became four tabs.
+
+Ms. Marsh is careful, though, about what this does and does not mean. Access is not the same as craft. "Everyone can afford a piano now," she said, at about 4 p.m. on a Tuesday, in a studio she rents by the hour. "That has not made everyone a pianist — it has made the good ones easier to find."
+
+You can read the full survey, including its methodology and its rather large caveats about self-selection, at https://example.org/reports/2024/post-production-economics-survey-full-methodology-and-appendices.
+
+What comes next is harder to call. The cost of a tool has fallen to nearly zero. The cost of taste — of knowing which of ten thousand possible versions of a shot is the right one — has not moved at all. It may, in fact, have gone up.

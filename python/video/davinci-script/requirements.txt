@@ -1,0 +1,22 @@
+# No third-party packages are required.
+#
+# This tool uses only the Python standard library (argparse, array, struct,
+# math, json, hashlib, logging, unicodedata, shutil, tkinter). It deliberately
+# does NOT use `wave` -- Resolve's generated WAVs are WAVE_FORMAT_EXTENSIBLE
+# IEEE float and `wave.open()` refuses them -- nor `audioop`, which was removed
+# in Python 3.13. Do not run `pip install -r requirements.txt` expecting it to
+# install anything; there is nothing to install.
+#
+# The only external dependency is DaVinci Resolve Studio itself, which supplies
+# the `fusionscript` library and the `DaVinciResolveScript` module. Those ship
+# with Resolve; they are not on PyPI and must not be pip-installed.
+#
+# Requirements:
+#   * DaVinci Resolve Studio 20.x or 21.x, running
+#     (verified against 21.0.1.11 on Windows 11)
+#   * the "AI Speech Generator" package, installed via Resolve's
+#     Extras Download Manager
+#   * Preferences -> System -> General -> "External scripting using" = "Local",
+#     followed by a restart of Resolve
+#   * Python 3.9 or newer, 64-bit  (see README.md: 3.11.9 crashes on import of
+#     fusionscript.dll on this machine; use `py -3.14`)

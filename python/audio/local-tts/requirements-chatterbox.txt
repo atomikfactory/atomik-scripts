@@ -1,0 +1,11 @@
+# Default engine: Chatterbox (Turbo / original / Multilingual / Nano) - MIT license.
+#
+# STEP 1 - install PyTorch with CUDA first (chatterbox-tts pins torch 2.6.0):
+#   NVIDIA GPU:   pip install torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu124
+#   CPU only:     pip install torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+# STEP 2 - install this file:
+#   pip install -r requirements-chatterbox.txt
+#
+# Python 3.10 - 3.12 recommended.
+-r requirements.txt
+chatterbox-tts==0.1.7

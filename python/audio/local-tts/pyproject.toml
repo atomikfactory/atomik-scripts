@@ -1,0 +1,40 @@
+[project]
+name = "local-tts"
+version = "0.1.0"
+description = "Local text-to-speech and voice cloning for long-form voice-overs (RTX 3060 Ti friendly)."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "numpy>=1.24,<2.0",
+    "soundfile>=0.12.1",
+    "soxr>=0.5",
+]
+
+[project.optional-dependencies]
+# Install PyTorch (CUDA build) before any of these - see README.md.
+chatterbox = ["chatterbox-tts==0.1.7"]
+kokoro = ["kokoro==0.9.4"]
+qwen3 = ["qwen-tts==0.1.1"]   # separate virtual environment, see requirements-qwen3.txt
+dev = ["pytest>=8.0", "ruff>=0.6"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 130
+target-version = "py310"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E501"]
